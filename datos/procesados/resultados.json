@@ -1,0 +1,422 @@
+{
+ "nacional": {
+  "tasa": 27.53,
+  "li": 26.53,
+  "ls": 28.53,
+  "n": 108664,
+  "poblacion": 34147766,
+  "pobres": 9400447
+ },
+ "extrema": {
+  "tasa": 5.5,
+  "li": 5.04,
+  "ls": 5.96,
+  "n": 108664,
+  "poblacion": 34147766,
+  "pobres": 1878051
+ },
+ "ninos": {
+  "tasa": 36.47,
+  "li": 35.17,
+  "ls": 37.77,
+  "n": 32701,
+  "poblacion": 9817902,
+  "pobres": 3580729
+ },
+ "adultos": {
+  "tasa": 23.92,
+  "li": 22.96,
+  "ls": 24.88,
+  "n": 75963,
+  "poblacion": 24329864,
+  "pobres": 5819718
+ },
+ "ninos_extrema": {
+  "tasa": 8.13,
+  "li": 7.39,
+  "ls": 8.88,
+  "n": 32701,
+  "poblacion": 9817902,
+  "pobres": 798614
+ },
+ "adultos_extrema": {
+  "tasa": 4.44,
+  "li": 4.05,
+  "ls": 4.82,
+  "n": 75963,
+  "poblacion": 24329864,
+  "pobres": 1079437
+ },
+ "ninos_rural": {
+  "tasa": 48.12,
+  "li": 46.12,
+  "ls": 50.13,
+  "n": 12148,
+  "poblacion": 2129647,
+  "pobres": 1024861
+ },
+ "ninos_urbano": {
+  "tasa": 33.24,
+  "li": 31.67,
+  "ls": 34.82,
+  "n": 20553,
+  "poblacion": 7688255,
+  "pobres": 2555868
+ },
+ "grupos": {
+  "0-5": {
+   "tasa": 41.57,
+   "li": 39.77,
+   "ls": 43.38,
+   "n": 8308,
+   "poblacion": 2450079,
+   "pobres": 1018554
+  },
+  "6-11": {
+   "tasa": 36.22,
+   "li": 34.66,
+   "ls": 37.78,
+   "n": 11696,
+   "poblacion": 3542371,
+   "pobres": 1283084
+  },
+  "12-17": {
+   "tasa": 33.44,
+   "li": 31.87,
+   "ls": 35.0,
+   "n": 12697,
+   "poblacion": 3825451,
+   "pobres": 1279092
+  },
+  "18-29": {
+   "tasa": 23.95,
+   "li": 22.56,
+   "ls": 25.33,
+   "n": 16910,
+   "poblacion": 5636492,
+   "pobres": 1349730
+  },
+  "30-59": {
+   "tasa": 24.78,
+   "li": 23.75,
+   "ls": 25.81,
+   "n": 40056,
+   "poblacion": 12819341,
+   "pobres": 3176519
+  },
+  "60+": {
+   "tasa": 22.02,
+   "li": 20.77,
+   "ls": 23.27,
+   "n": 18997,
+   "poblacion": 5874030,
+   "pobres": 1293469
+  }
+ },
+ "ninos_entre_pobres": 38.09,
+ "ninos_en_poblacion": 28.75,
+ "urbanos_entre_ninos_pobres": 71.38,
+ "ninos_por_tamano": {
+  "1-3": {
+   "tasa": 20.08,
+   "li": 18.23,
+   "ls": 21.93,
+   "n": 5924,
+   "poblacion": 1800430,
+   "pobres": 361518
+  },
+  "4-5": {
+   "tasa": 33.45,
+   "li": 31.83,
+   "ls": 35.08,
+   "n": 17018,
+   "poblacion": 5182285,
+   "pobres": 1733691
+  },
+  "6+": {
+   "tasa": 52.4,
+   "li": 49.87,
+   "ls": 54.93,
+   "n": 9759,
+   "poblacion": 2835187,
+   "pobres": 1485520
+  }
+ },
+ "departamentos": [
+  {
+   "cod": "01",
+   "departamento": "Amazonas",
+   "ninos": 35.53,
+   "ninos_li": 28.77,
+   "ninos_ls": 42.28,
+   "adultos": 21.45,
+   "brecha": 14.08,
+   "ninos_pobres": 50273,
+   "n": 1348
+  },
+  {
+   "cod": "02",
+   "departamento": "Áncash",
+   "ninos": 31.34,
+   "ninos_li": 25.58,
+   "ninos_ls": 37.1,
+   "adultos": 19.24,
+   "brecha": 12.1,
+   "ninos_pobres": 113176,
+   "n": 1366
+  },
+  {
+   "cod": "03",
+   "departamento": "Apurímac",
+   "ninos": 30.96,
+   "ninos_li": 24.14,
+   "ninos_ls": 37.78,
+   "adultos": 21.31,
+   "brecha": 9.65,
+   "ninos_pobres": 42302,
+   "n": 692
+  },
+  {
+   "cod": "04",
+   "departamento": "Arequipa",
+   "ninos": 24.24,
+   "ninos_li": 19.4,
+   "ninos_ls": 29.09,
+   "adultos": 12.87,
+   "brecha": 11.37,
+   "ninos_pobres": 87331,
+   "n": 1229
+  },
+  {
+   "cod": "05",
+   "departamento": "Ayacucho",
+   "ninos": 42.13,
+   "ninos_li": 35.77,
+   "ninos_ls": 48.49,
+   "adultos": 28.8,
+   "brecha": 13.33,
+   "ninos_pobres": 101187,
+   "n": 1016
+  },
+  {
+   "cod": "06",
+   "departamento": "Cajamarca",
+   "ninos": 50.92,
+   "ninos_li": 45.43,
+   "ninos_ls": 56.41,
+   "adultos": 42.37,
+   "brecha": 8.55,
+   "ninos_pobres": 241751,
+   "n": 1359
+  },
+  {
+   "cod": "07",
+   "departamento": "Callao",
+   "ninos": 45.24,
+   "ninos_li": 39.23,
+   "ninos_ls": 51.24,
+   "adultos": 29.71,
+   "brecha": 15.53,
+   "ninos_pobres": 134585,
+   "n": 858
+  },
+  {
+   "cod": "08",
+   "departamento": "Cusco",
+   "ninos": 26.22,
+   "ninos_li": 20.08,
+   "ninos_ls": 32.36,
+   "adultos": 15.52,
+   "brecha": 10.7,
+   "ninos_pobres": 102087,
+   "n": 1048
+  },
+  {
+   "cod": "09",
+   "departamento": "Huancavelica",
+   "ninos": 42.06,
+   "ninos_li": 36.7,
+   "ninos_ls": 47.42,
+   "adultos": 29.63,
+   "brecha": 12.43,
+   "ninos_pobres": 70615,
+   "n": 1040
+  },
+  {
+   "cod": "10",
+   "departamento": "Huánuco",
+   "ninos": 48.75,
+   "ninos_li": 42.27,
+   "ninos_ls": 55.23,
+   "adultos": 34.84,
+   "brecha": 13.91,
+   "ninos_pobres": 147940,
+   "n": 1277
+  },
+  {
+   "cod": "11",
+   "departamento": "Ica",
+   "ninos": 9.21,
+   "ninos_li": 6.2,
+   "ninos_ls": 12.22,
+   "adultos": 4.49,
+   "brecha": 4.72,
+   "ninos_pobres": 23743,
+   "n": 1393
+  },
+  {
+   "cod": "12",
+   "departamento": "Junín",
+   "ninos": 26.41,
+   "ninos_li": 20.99,
+   "ninos_ls": 31.84,
+   "adultos": 15.43,
+   "brecha": 10.98,
+   "ninos_pobres": 109909,
+   "n": 1357
+  },
+  {
+   "cod": "13",
+   "departamento": "La Libertad",
+   "ninos": 41.19,
+   "ninos_li": 36.4,
+   "ninos_ls": 45.98,
+   "adultos": 25.09,
+   "brecha": 16.1,
+   "ninos_pobres": 263239,
+   "n": 1532
+  },
+  {
+   "cod": "14",
+   "departamento": "Lambayeque",
+   "ninos": 21.21,
+   "ninos_li": 15.5,
+   "ninos_ls": 26.91,
+   "adultos": 11.22,
+   "brecha": 9.99,
+   "ninos_pobres": 81025,
+   "n": 1267
+  },
+  {
+   "cod": "15",
+   "departamento": "Lima",
+   "ninos": 36.5,
+   "ninos_li": 33.23,
+   "ninos_ls": 39.78,
+   "adultos": 23.77,
+   "brecha": 12.73,
+   "ninos_pobres": 1003563,
+   "n": 3585
+  },
+  {
+   "cod": "16",
+   "departamento": "Loreto",
+   "ninos": 51.47,
+   "ninos_li": 46.81,
+   "ninos_ls": 56.13,
+   "adultos": 36.35,
+   "brecha": 15.12,
+   "ninos_pobres": 238777,
+   "n": 2341
+  },
+  {
+   "cod": "17",
+   "departamento": "Madre de Dios",
+   "ninos": 15.22,
+   "ninos_li": 9.54,
+   "ninos_ls": 20.89,
+   "adultos": 8.35,
+   "brecha": 6.87,
+   "ninos_pobres": 10240,
+   "n": 797
+  },
+  {
+   "cod": "18",
+   "departamento": "Moquegua",
+   "ninos": 14.15,
+   "ninos_li": 7.69,
+   "ninos_ls": 20.6,
+   "adultos": 9.86,
+   "brecha": 4.29,
+   "ninos_pobres": 6610,
+   "n": 582
+  },
+  {
+   "cod": "19",
+   "departamento": "Pasco",
+   "ninos": 50.15,
+   "ninos_li": 43.29,
+   "ninos_ls": 57.01,
+   "adultos": 33.84,
+   "brecha": 16.31,
+   "ninos_pobres": 54076,
+   "n": 923
+  },
+  {
+   "cod": "20",
+   "departamento": "Piura",
+   "ninos": 39.46,
+   "ninos_li": 35.25,
+   "ninos_ls": 43.66,
+   "adultos": 27.88,
+   "brecha": 11.58,
+   "ninos_pobres": 263870,
+   "n": 1939
+  },
+  {
+   "cod": "21",
+   "departamento": "Puno",
+   "ninos": 49.07,
+   "ninos_li": 42.47,
+   "ninos_ls": 55.67,
+   "adultos": 37.08,
+   "brecha": 11.99,
+   "ninos_pobres": 209840,
+   "n": 795
+  },
+  {
+   "cod": "22",
+   "departamento": "San Martín",
+   "ninos": 27.49,
+   "ninos_li": 22.39,
+   "ninos_ls": 32.58,
+   "adultos": 18.98,
+   "brecha": 8.51,
+   "ninos_pobres": 91306,
+   "n": 1579
+  },
+  {
+   "cod": "23",
+   "departamento": "Tacna",
+   "ninos": 30.78,
+   "ninos_li": 21.88,
+   "ninos_ls": 39.67,
+   "adultos": 21.58,
+   "brecha": 9.2,
+   "ninos_pobres": 28952,
+   "n": 944
+  },
+  {
+   "cod": "24",
+   "departamento": "Tumbes",
+   "ninos": 35.62,
+   "ninos_li": 29.26,
+   "ninos_ls": 41.98,
+   "adultos": 22.58,
+   "brecha": 13.04,
+   "ninos_pobres": 28720,
+   "n": 839
+  },
+  {
+   "cod": "25",
+   "departamento": "Ucayali",
+   "ninos": 35.65,
+   "ninos_li": 30.25,
+   "ninos_ls": 41.04,
+   "adultos": 21.69,
+   "brecha": 13.96,
+   "ninos_pobres": 75610,
+   "n": 1595
+  }
+ ]
+}
