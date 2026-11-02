@@ -9,7 +9,7 @@ from PIL import Image
 
 R = json.load(open("datos/procesados/resultados.json")); S = Path("reel/recursos")
 FON, TX, SU, AC, AZ = "#1C1A17", "#F7F3EC", "#B8AE9F", "#F08A4B", "#5FA8B8"
-plt.rcParams.update({"figure.facecolor": FON, "axes.facecolor": FON, "text.color": TX, "font.size": 25, "xtick.color": TX, "axes.edgecolor": FON})
+plt.rcParams.update({"figure.facecolor": FON, "axes.facecolor": FON, "text.color": TX, "font.size": 25, "xtick.color": TX, "ytick.color": TX, "axes.edgecolor": FON})
 def barras(et, val, col, nom):
     f, a = plt.subplots(figsize=(9, 5.2)); b = a.bar(et, val, color=col)
     a.bar_label(b, [f"{v:.1f} %" for v in val], padding=6); a.set_yticks([]); a.set_ylim(0, max(val) * 1.18); a.tick_params(length=0)
@@ -26,7 +26,7 @@ for x in geo["features"]:
     t = x["geometry"]; pol = t["coordinates"] if t["type"] == "MultiPolygon" else [t["coordinates"]]
     for p in pol: a.add_patch(Polygon(p[0], fc=cm(dep[x["properties"]["FIRST_IDDP"]] / 55), ec=FON, lw=.8))
 a.set_xlim(-82, -68); a.set_ylim(-19, 0.5); a.set_aspect("equal"); a.axis("off")
-a.text(-74, -5, "Loreto\n51.5 %", ha="center", fontweight="bold", color="#1C1A17"); a.annotate("Ica 9.2 %", (-75.5, -14.2), (-81.8, -17), arrowprops=dict(color=TX, arrowstyle="-"))
+a.text(-74, -5, "Loreto\n51.5 %", ha="center", fontweight="bold", color="white"); a.annotate("Ica 9.2 %", (-75.5, -14.2), (-81.8, -17), arrowprops=dict(color=TX, arrowstyle="-"))
 f.tight_layout(); f.savefig(S / "fig_mapa.png", dpi=110); plt.close(f)
 Image.open(S / "capturas/dashboard_inicio.png").convert("RGB").resize((1000, 703)).save(S / "fig_tablero.png")
 # Música propia: acordes lentos, graves y sobrios, acordes con un tema serio,, sin licencia de terceros
