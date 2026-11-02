@@ -1,5 +1,5 @@
 """Voz clonada -> reel con gráficos, música y subtítulos. Usa el motor de la Sesión 15 del curso.
-Uso, desde la raíz: python reel/hacer_reel.py reel/recursos/mi_voz.m4a [--prueba]"""
+Uso, desde la raíz: python reel/generar_voz.py reel/recursos/mi_voz.m4a && python reel/hacer_reel.py"""
 import json, sys
 from pathlib import Path
 import numpy as np, soundfile as sf
@@ -27,10 +27,26 @@ if "--prueba" in sys.argv:
         m._cuadro(m._base(guion["titulo"], FUENTE, AUTOR), [escena(e) for e in guion["escenas"]], n, n.escenas[i][0] + .6, m._bloques(n.palabras), m._fuente("PublicSans", 62, 800)).save(S / f"prueba_{i}.png")
     sys.exit()
 
-voz = m.Voz(sys.argv[1], modelo="Qwen/Qwen3-TTS-12Hz-0.6B-Base", device="cpu"); print("Referencia:", voz.texto_ref, flush=True)
-n = m.narrar(voz, guion); print("Duración", round(n.duracion, 1), "WER", [round(e["wer"], 2) for e in guion["escenas"]], flush=True)
-sf.write(S / "narracion.wav", n.audio, n.sr)
-m.subtitulos(n, guion); m.a_srt(n, "reel/subtitulos.srt")
+# La voz ya está en narracion_N.wav (reel/generar_voz.py). Subtítulos y control con un Whisper pequeño.
+m.ASR = "small"
+wavs = [sf.read(S / f"narracion_{i}.wav", dtype="float32") for i in range(len(guion["escenas"]))]
+sr = wavs[0][1]; partes = [np.zeros(int(m.INICIO * sr), np.float32)]; esc = []; t = m.INICIO
+for e, (w, _) in zip(guion["escenas"], wavs):
+    e["wer"] = m._wer(e["frase"], m._a16k(w, sr))
+    esc.append((t, t + len(w) / sr)); partes += [w, np.zeros(int(m.PAUSA * sr), np.float32)]; t += len(w) / sr + m.PAUSA
+partes.append(np.zeros(int(m.FINAL * sr), np.float32))
+n = m.Narracion(np.concatenate(partes), sr, esc)
+print("Duración", round(n.duracion, 1), "WER", [round(e["wer"], 2) for e in guion["escenas"]], flush=True)
+m.subtitulos(n, guion)
+def corrige(i, w):
+    previa = n.palabras[i - 1][2] if i else ""
+    if w == "menores" and previa == "Mientras": return "menor es"
+    if w == "viven" and n.palabras[i + 1][2].startswith("pobreza"): return "vive en"
+    if w == "niños," and n.palabras[i + 1][2] == "pobres,": return "niños"
+    if w == "pobres,": return "pobres"
+    return w
+n.palabras = [(a, b, corrige(i, w)) for i, (a, b, w) in enumerate(n.palabras)]
+m.a_srt(n, "reel/subtitulos.srt")
 mus = m.cargar_audio(S / "musica_propia.wav", sr=n.sr)[:len(n.audio)]
 fade = np.minimum(1, np.minimum(np.arange(len(mus)), np.arange(len(mus))[::-1]) / n.sr)
 n.audio = n.audio + 0.06 * mus * fade   # la música queda muy por debajo de la voz

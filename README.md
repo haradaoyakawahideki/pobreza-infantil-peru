@@ -48,7 +48,7 @@ python scripts/analizar_datos.py
 python -m http.server 8765   # abre http://localhost:8765/web/
 ```
 
-Para el reel: `pip install qwen-tts faster-whisper pillow imageio-ffmpeg soundfile jiwer num2words librosa`, luego `python reel/preparar_recursos.py` y `python reel/hacer_reel.py <tu_voz.m4a>`. `reel/motor_sesion15.py` es el código de la [Sesión 15 del curso](https://github.com/d2cml-ai/Data-Science-Python/tree/main/sessions/15-texto-a-reel). La grabación de voz no se publica.
+Para el reel: `pip install qwen-tts faster-whisper pillow imageio-ffmpeg soundfile jiwer num2words librosa`, luego `python reel/preparar_recursos.py` y `python reel/generar_voz.py <tu_voz.m4a> cpu` y `python reel/hacer_reel.py` (el texto de referencia está en `generar_voz.py`). `reel/motor_sesion15.py` es el código de la [Sesión 15 del curso](https://github.com/d2cml-ai/Data-Science-Python/tree/main/sessions/15-texto-a-reel). La grabación de voz no se publica.
 
 ## Uso de inteligencia artificial
 
