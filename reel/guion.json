@@ -1,0 +1,8 @@
+{"titulo":"Pobreza infantil en el Perú","escenas":[
+{"frase":"Más de un tercio de los niños del Perú vive en pobreza. Son treinta y seis coma cinco por ciento, según la encuesta de hogares de dos mil veinticuatro.","cifra":"36.5 %","etiqueta":"de los menores de 18 es pobre","imagen":"fig_ninos.png"},
+{"frase":"Entre los adultos, la cifra baja a veintitrés coma nueve por ciento. La pobreza no golpea a todas las edades por igual.","cifra":"23.9 %","etiqueta":"de los adultos es pobre","imagen":"fig_ninos.png"},
+{"frase":"Y mientras menor es la edad, mayor es la pobreza. Entre los menores de seis años, llega a cuarenta y uno coma seis por ciento.","cifra":"41.6 %","etiqueta":"de los menores de 6 años","imagen":"fig_edad.png"},
+{"frase":"El lugar también importa. La pobreza infantil va de nueve coma dos por ciento en Ica a cincuenta y uno coma cinco por ciento en Loreto.","cifra":"9.2 % a 51.5 %","etiqueta":"de Ica a Loreto","imagen":"fig_mapa.png"},
+{"frase":"Pero en los veinticinco departamentos, los niños son más pobres que los adultos. Y aunque el riesgo es mayor en el campo, siete de cada diez niños pobres viven en zonas urbanas.","cifra":"71.4 %","etiqueta":"de los niños pobres vive en zona urbana","imagen":"fig_area.png"},
+{"frase":"Te invito a explorar estos datos por edad, sexo y departamento en mi tablero. El enlace está en la descripción.","cifra":"","etiqueta":"Explora el tablero","imagen":"fig_tablero.png"}
+]}
